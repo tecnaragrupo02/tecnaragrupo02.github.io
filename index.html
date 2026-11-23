@@ -8,22 +8,71 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <main>
-    <span class="badge">&lt;AI /&gt; DEVELOPMENT</span>
-    <h1>Building intelligent software</h1>
-    <p>
-      Welcome to the home of <code>tecnaragrupo02</code>. We explore machine
-      learning, language models and AI-assisted tooling to turn ideas into
-      working products.
-    </p>
-    <ul>
-      <li><strong>Machine Learning</strong>Models trained on real data</li>
-      <li><strong>LLM Apps</strong>Agents, chat and automation</li>
-      <li><strong>AI Tooling</strong>Faster, smarter workflows</li>
-    </ul>
-    <a class="btn" href="https://github.com/tecnaragrupo02" target="_blank" rel="noopener noreferrer">
-      View our GitHub
-    </a>
+  <div class="bg" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="grid"></span>
+  </div>
+
+  <header class="nav">
+    <a class="logo" href="#top"><span class="logo-dot"></span>tecnara<b>grupo02</b></a>
+    <nav>
+      <a href="#what">What we do</a>
+      <a href="#stack">Stack</a>
+      <a class="nav-cta" href="https://github.com/tecnaragrupo02" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <span class="pill"><span class="pulse"></span> Exploring AI development</span>
+      <h1>Building <span class="gradient">intelligent</span> software.</h1>
+      <p class="lead">
+        We experiment with machine learning, language models and AI-assisted
+        tooling, and turn those ideas into working products.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://github.com/tecnaragrupo02" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.08 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+          View on GitHub
+        </a>
+        <a class="btn btn-ghost" href="#what">Learn more</a>
+      </div>
+    </section>
+
+    <section id="what" class="section">
+      <h2>What we do</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">🧠</div>
+          <h3>Machine Learning</h3>
+          <p>Training and evaluating models on real-world data.</p>
+        </article>
+        <article class="card">
+          <div class="icon">💬</div>
+          <h3>LLM Apps</h3>
+          <p>Chatbots, agents and automation built on language models.</p>
+        </article>
+        <article class="card">
+          <div class="icon">⚡</div>
+          <h3>AI Tooling</h3>
+          <p>Faster, smarter developer workflows with AI in the loop.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" class="section">
+      <h2>Our stack</h2>
+      <ul class="chips">
+        <li>Python</li><li>PyTorch</li><li>Hugging Face</li><li>LangChain</li>
+        <li>OpenAI &amp; Claude APIs</li><li>JavaScript</li><li>Git</li>
+      </ul>
+    </section>
   </main>
+
+  <footer class="footer">
+    <span>© 2026 tecnaragrupo02</span>
+    <a href="https://github.com/tecnaragrupo02" target="_blank" rel="noopener noreferrer">github.com/tecnaragrupo02</a>
+  </footer>
 </body>
 </html>
