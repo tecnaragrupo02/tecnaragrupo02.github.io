@@ -1,0 +1,56 @@
+.sr-only {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+.tasks-main { max-width: 680px; padding-top: 70px; text-align: center; }
+.tasks-title { margin: 0 0 12px; font-size: clamp(2.2rem, 6vw, 3.4rem); }
+.tasks-main .lead { margin-bottom: 32px; }
+
+.task-form { display: flex; gap: 10px; margin-bottom: 22px; }
+.task-form input {
+  flex: 1; min-width: 0;
+  padding: 14px 18px; font: inherit; color: var(--fg);
+  background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+  outline: none; transition: border-color .2s, box-shadow .2s;
+}
+.task-form input::placeholder { color: var(--muted); }
+.task-form input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(94, 234, 212, .15); }
+.task-form .btn { border: 0; cursor: pointer; font-family: inherit; }
+
+.toolbar {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 12px; margin-bottom: 14px; color: var(--muted); font-size: .9rem;
+}
+.filters { display: flex; gap: 4px; padding: 4px; border: 1px solid var(--border); border-radius: 999px; background: var(--card); }
+.filters button {
+  padding: 6px 14px; border: 0; border-radius: 999px; cursor: pointer;
+  font: inherit; color: var(--muted); background: transparent;
+}
+.filters button.active { color: #070a14; background: linear-gradient(100deg, var(--accent), var(--accent2)); font-weight: 600; }
+.link-btn { border: 0; background: none; color: var(--muted); font: inherit; cursor: pointer; text-decoration: underline; }
+.link-btn:hover { color: var(--accent3); }
+[hidden] { display: none !important; }
+
+.task-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; text-align: left; }
+.task {
+  display: flex; align-items: center; gap: 14px;
+  padding: 14px 18px; border-radius: 14px;
+  background: var(--card); border: 1px solid var(--border);
+  transition: border-color .2s, background .2s;
+}
+.task:hover { border-color: var(--accent2); background: rgba(255, 255, 255, .07); }
+.task input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--accent); cursor: pointer; flex: none; }
+.task label { flex: 1; cursor: pointer; word-break: break-word; }
+.task.done label { color: var(--muted); text-decoration: line-through; }
+.del {
+  border: 0; background: none; color: var(--muted); cursor: pointer;
+  font-size: 1rem; padding: 6px 8px; border-radius: 8px;
+}
+.del:hover, .del:focus-visible { color: var(--accent3); background: rgba(244, 114, 182, .12); }
+
+.empty { color: var(--muted); margin-top: 28px; }
+
+@media (max-width: 480px) {
+  .toolbar { justify-content: center; }
+}
